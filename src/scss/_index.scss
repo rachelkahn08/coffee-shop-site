@@ -1,0 +1,172 @@
+body {
+	background-color: $backgroundColor;
+	background-image: url('../img/bg-dark.jpg');
+	background-size: fill;
+	background-attachment: fixed;
+	color: $offWhite;
+}
+
+.holtwood {
+	font-family: holtwood;
+	border-bottom: 1px solid $offWhite;
+
+	@include breakpoint(desktop) {
+		font-size: 2rem;
+		border: 0;	
+	}
+}
+
+.hero {
+	padding-top: 10px;
+	background-image: url(../img/exterior.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 200px;
+
+	.hero-button-container {
+		background-color: rgba(0, 0, 0, 0.7);
+		float: right;
+		width: 48%;
+		text-align: center;
+	}
+
+	h3, h4 {
+		width: 100%;
+	}
+
+	h4 {
+		margin: 0;
+		padding: 0;
+	}
+
+	button {
+		margin-top: 15px;
+		color: #222;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: white;
+		border-color: transparent;
+		width: 100%;
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.menu-item-name {
+	font-size: 1.3125rem;
+}
+
+.menu-item-description {
+	font-size: 0.875rem;
+	color: $descriptionColor;
+}
+
+.menu-title {
+	@include breakpoint(desktop) {
+		font-size: 2.5rem;
+		text-align: center;
+		border-bottom: 1px solid $offWhite;
+		padding-bottom: 15px;
+		margin-bottom: -3px;
+	}
+}
+
+
+.container {
+	@include breakpoint(desktop) {
+		max-width: 970px;
+	}
+}
+
+.lobster {
+	font-family: lobster;
+	text-align: center;
+	font-size: 5rem;
+	padding: 15px;
+	padding-bottom: 20px;
+	text-shadow: 	1px 1px 0px $backgroundColor,
+					2px 2px 0px $borderTopColor;
+
+	@include breakpoint(tablet) {
+		font-size: 6rem;
+	}
+
+	@include breakpoint(desktop) {
+		font-size: 7rem;
+	}
+}
+
+.carousel {
+
+	background-color: $backgroundColor;
+
+	img {
+		margin: 0 auto;
+		max-height: 360px;
+	}
+
+	.carousel-control.right {
+		background-image: linear-gradient(to right, rgba(19, 9, 0, 0) 100%, rgba(19, 9, 0, 1) 50%);
+	}
+
+	.carousel-control.left {
+		background-image: linear-gradient(to right, rgba(19, 9, 0, 1) 0%, rgba(19, 9, 0, 0) 100%);
+	}
+
+	.glyphicon-menu-right,
+	.glyphicon-menu-left {
+		top: 50%;
+		font-size: 3rem;
+	}
+}
+
+.gallery {
+	margin-top: 10px;
+
+	.gallery-image {
+		border: 3px solid rgba(255, 255, 255, 0.3);
+		padding: 0;
+		margin: 5px;
+
+		@include breakpoint(tablet) {
+			border-width: 10px;
+		}
+
+		@include breakpoint(desktop) {
+			
+		}
+	}
+}
+
+.right-align {
+		@include breakpoint(desktop) {
+			text-align: right;
+		}
+}
+
+footer {
+	background-color: $backgroundColor;
+	border-top: 1px solid $borderBottomColor;
+	padding: 15px;
+	margin-top: 5vw;
+
+	.lobster {
+		font-size: 3rem;
+		text-align: left;
+		margin-bottom: 20px;
+
+		@include breakpoint(tablet) {
+			padding: 0;
+		}
+	}
+	
+	p, div {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.fine-print-container {
+		
+	}
+}
